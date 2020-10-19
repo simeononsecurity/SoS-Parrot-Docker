@@ -1,6 +1,6 @@
 
 FROM parrotsec/core:rolling
-MAINTAINER Lorenzo "Palinuro" Faletra (palinuro@linux.it)
+#MAINTAINER Lorenzo "Palinuro" Faletra (palinuro@linux.it)
 ENV DEBIAN_FRONTEND noninteractive
 ENV VERSION 4.8-1
 
