@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV VERSION 4.8-1
 
 # Install components
-RUN apt-get update; RUN apt-get full-upgrade -y; apt-get -y dist-upgrade;apt-get -y install parrot-pico;apt-get -y install parrot-mini parrot-tools-cloud; apt-get -y install parrot-interface parrot-interface-full parrot-tools-full; apt -y --allow-downgrades install parrot-interface parrot-interface-full parrot-tools-full; apt-get -y install xrdp;  rm -rf /var/lib/apt/lists/*
+RUN apt-get update; apt-get full-upgrade -y; apt-get -y dist-upgrade; apt-get -y install parrot-pico; apt-get -y install parrot-mini parrot-tools-cloud; apt-get -y install parrot-interface parrot-interface-full parrot-tools-full; apt -y --allow-downgrades install parrot-interface parrot-interface-full parrot-tools-full; apt-get -y install xrdp; rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT bash $@
 
